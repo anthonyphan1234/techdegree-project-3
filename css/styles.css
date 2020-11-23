@@ -19,7 +19,7 @@ legend {
 }
 
 form {
-    margin: 0 2em;
+    margin: 0 .5em;
 }
 
 form h1 {
@@ -28,7 +28,8 @@ form h1 {
 
 form h2 {
     color: lightgray;
-    margin-top: 0;
+    margin: 0 1em 2em 1em;
+    text-align: center;
 }
 
 fieldset {
@@ -61,6 +62,12 @@ button {
     box-sizing: border-box;
 }
 
+::placeholder {
+    text-align: right;
+    padding-right: 2em;
+    color: rgb(194, 194, 194);
+}
+
 /* ================================= 
 Class Selectors
 ==================================== */
@@ -69,6 +76,20 @@ Class Selectors
 /* ================================= 
 ID Selectors
 ==================================== */
+
+#contact legend {
+    padding: 1em 0;
+}
+
+#contact input, select {
+    height: 4em;
+    padding-left: 1em;
+}
+
+#contact label {
+    display: block;
+    margin: 1em 0;
+}
 
 #sign-up {
     display: flex;
@@ -93,4 +114,6 @@ ID Selectors
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {}
+@media (min-width: 769px) {
+
+}
