@@ -9,7 +9,7 @@ Elements
 header h1 {
     text-transform: uppercase;
     text-align: center;
-    background-color: #2d3945;
+    background-color: rgb(241, 167, 6);
     color: white;
     padding: 1em .1em;
     line-height: 2em;
@@ -50,6 +50,7 @@ p {
 /* ================================= 
 CSS Selectors
 ==================================== */
+
 :required:focus {
     outline: 2px solid red;
     transition: 1s;
@@ -82,6 +83,22 @@ select {
     background-color: #eaeef0;
     border: none;
     border-radius: 5px;
+}
+
+#phone:focus,
+#address:focus,
+#city:focus,
+#state:focus,
+#zip:focus,
+#html:focus,
+#css:focus,
+#news:focus,
+#html-news:focus,
+#plain:focus,
+#topic:focus,
+#sign-up-button:focus {
+    outline: 2px solid orange;
+    transition: 1s;
 }
 
 /* ================================= 
@@ -203,7 +220,7 @@ select {
   Media Queries
 ==================================== */
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
 
 
     header h1 {
